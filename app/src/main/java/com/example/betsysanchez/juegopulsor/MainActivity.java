@@ -1,6 +1,7 @@
 package com.example.betsysanchez.juegopulsor;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -33,6 +34,9 @@ public class MainActivity extends AppCompatActivity {
         facil=findViewById(R.id.facil);
         normal=findViewById(R.id.normal);
         rude=findViewById(R.id.RUDE);
+        normal.setTextColor(Color.parseColor("#ffffff"));
+        facil.setTextColor(Color.parseColor("#ffffff"));
+        rude.setTextColor(Color.parseColor("#ffffff"));
         bandera=false;
         t = findViewById(R.id.numAleat);
         detener = findViewById(R.id.button2);
@@ -48,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
                 velocidad=750;
                 stoptimertask(view);
                 startTimer();
+                facil.setTextColor(Color.parseColor("#33b5e5"));
+                normal.setTextColor(Color.parseColor("#ffffff"));
+                rude.setTextColor(Color.parseColor("#ffffff"));
             }
         });
 
@@ -57,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
                 velocidad=500;
                 stoptimertask(view);
                 startTimer();
+                normal.setTextColor(Color.parseColor("#33b5e5"));
+                facil.setTextColor(Color.parseColor("#ffffff"));
+                rude.setTextColor(Color.parseColor("#ffffff"));
             }
         });
 
@@ -66,6 +76,9 @@ public class MainActivity extends AppCompatActivity {
                 velocidad=150;
                 stoptimertask(view);
                 startTimer();
+                rude.setTextColor(Color.parseColor("#33b5e5"));
+                normal.setTextColor(Color.parseColor("#ffffff"));
+                facil.setTextColor(Color.parseColor("#ffffff"));
             }
         });
         detener.setOnClickListener(new View.OnClickListener() {

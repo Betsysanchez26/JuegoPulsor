@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
     tools:context="com.example.betsysanchez.juegopulsor.MainActivity"
     tools:layout_editor_absoluteY="81dp">
 
@@ -15,6 +16,8 @@
         android:layout_marginTop="130dp"
         android:maxLength="3"
         android:text="hhh"
+        android:textColor="@android:color/black"
+        android:textSize="28dp"
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,6 +27,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Detener"
+        android:elevation="5dp"
+        android:padding="20dp"
+        android:background="@android:color/holo_blue_light"
         app:layout_constraintStart_toStartOf="@+id/normal"
         app:layout_constraintTop_toBottomOf="@+id/numAleat" />
 
@@ -34,7 +40,8 @@
         android:layout_marginEnd="10dp"
         android:maxLength="3"
         android:text="cen"
-        android:textColor="@android:color/black"
+        android:textSize="28dp"
+        android:textColor="@android:color/white"
         app:layout_constraintBaseline_toBaselineOf="@+id/tder"
         app:layout_constraintEnd_toStartOf="@+id/tder"
         app:layout_constraintStart_toEndOf="@+id/tizq" />
@@ -48,9 +55,11 @@
         android:layout_marginTop="16dp"
         android:maxLength="3"
         android:text="izq"
+        android:textSize="20dp"
         app:layout_constraintEnd_toStartOf="@+id/tcen"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
+        android:visibility="invisible"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
@@ -60,6 +69,8 @@
         android:layout_marginTop="16dp"
         android:maxLength="3"
         android:text="der"
+        android:textSize="20dp"
+        android:visibility="invisible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/tcen"
         app:layout_constraintTop_toTopOf="parent" />
